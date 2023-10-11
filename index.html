@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tournoi du meilleur mutli</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href=’https://fonts.googleapis.com/css?family=Nova Flat’ rel=’stylesheet’>
+  </head>
+  <body>
+    <header>
+        <h1> Tournoi </h1>
+        <h2> xDreaMerTV </h2>
+
+    </header>
+
+    <div class="container">
+        <div class="tableau1">
+        <table id="monTableau">
+                <thead>
+                    <tr>
+                        <th> PSEUDO </th>
+                        <th> SLOT </th>
+                        <th> GAIN </th>
+                        <th> MULTI </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="colonne1"> <input type="text" placeholder="Participant 1" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 1" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 2" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 2" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 3" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 3" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>   
+                        <td></td>     
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 4" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 4" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>
+                        <td></td>        
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 5" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 5" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 6" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 6" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>     
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 7" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 7" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td> 
+                        <td></td>       
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 8" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 8" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>     
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 9" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 9" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 10" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 10" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 10" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 10" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>   
+                        <td></td>     
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 11" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 11" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 12" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 12" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td> 
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 13" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 13" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>   
+                        <td></td>     
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 14" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 14" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>      
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 15" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 15" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 16" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 16" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>   
+                        <td></td>     
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 17" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 17" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>      
+                        <td></td>  
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 18" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 18" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 19" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 19" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td> 
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 20" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 20" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 21" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 21" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td> 
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 22" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 22" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>  
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 23" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 23" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 24" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 24" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1"><input type="text" placeholder="Participant 25" list="pseudos"></td>
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 25" list="slots"></td>
+                        <td><input type="number" placeholder="Gain" oninput="calculer(this)"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+        </table>
+        </div>
+
+        <button class="btn" onclick="trierTableau()">TOP 8</button>
+        <button class="btn2"> REMPLIR ARBRE</button>
+        <button class="btn3"> AFFICHER ARBRE </button>
+    </div>
+
+    <div class="bracket">
+        <!-- Quart 1 -->
+        <div class="tableau2">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Slots</th>
+                        <th>Gain</th>
+                        <th>Multi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="colonne1" id="gagnant1"> <span id="pseudoGagnant1"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 1" class="slot"></td>
+                        <td id = multi1><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                    <tr>
+                        <td class="colonne1" id="gagnant2"><span id="pseudoGagnant2"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 2"></td>
+                        <td id = multi2 ><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Quart 2 -->
+        <div class="tableau3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Slots</th>
+                        <th>Gain</th>
+                        <th>Multi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="gagnant3" class="colonne1"> <span id="pseudoGagnant3"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 3" class="slot"></td>
+                        <td id = multi3><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                    <tr>
+                        <td id="gagnant4" class="colonne1"> <span id="pseudoGagnant4"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 4" class="slot"></td>
+                        <td id = multi4><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Quart 3 -->
+        <div class="tableau4">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Slots</th>
+                        <th>Gain</th>
+                        <th>Multi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="gagnant5" class="colonne1"> <span id="pseudoGagnant5"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 5" class="slot"></td>
+                        <td id = multi5><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                    <tr>
+                        <td id="gagnant6" class="colonne1"> <span id="pseudoGagnant6"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 6" class="slot"></td>
+                        <td id = multi6><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Quart 4 -->
+        <div class="tableau5">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Slots</th>
+                        <th>Gain</th>
+                        <th>Multi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="gagnant7" class="colonne1"> <span id="pseudoGagnant7"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 7" class="slot"></td>
+                        <td id = multi7><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                    <tr>
+                        <td id="gagnant8" class="colonne1"> <span id="pseudoGagnant8"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Nom de la slot 8" class="slot"></td>
+                        <td id = multi8><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="demi">
+        <!-- Demi 1 -->
+        <div class="tableau6">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Slots</th>
+                        <th>Gain</th>
+                        <th>Multi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="gagnant9" class="colonne1"> <span id="pseudoGagnant9"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Slot du 1er demi-finaliste" class="slot"></td>
+                        <td id = multi9><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                    <tr>
+                        <td id="gagnant10" class="colonne1"> <span id="pseudoGagnant10"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Slot du 2eme demi-finaliste" class="slot"></td>
+                        <td id = multi10><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Demi 2 -->
+        <div class="tableau7">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Slots</th>
+                        <th>Gain</th>
+                        <th>Multi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="gagnant11" class="colonne1"> <span id="pseudoGagnant11"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Slot du 3eme demi-finaliste" class="slot"></td>
+                        <td id = multi11><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                    <tr>
+                        <td id="gagnant12" class="colonne1"> <span id="pseudoGagnant12"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Slot du 4eme demi-finaliste" class="slot"></td>
+                        <td id = multi12><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <div class="final">
+        <!-- Final 1 -->
+        <div class="tableau8">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pseudo</th>
+                        <th>Slots</th>
+                        <th>Gain</th>
+                        <th>Multi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="gagnant13" class="colonne1"> <span id="pseudoGagnant13"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Slot du 1er finaliste"></td>
+                        <td id = multi13><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                    <tr>
+                        <td id="gagnant14" class="colonne1"> <span id="pseudoGagnant14"></span></td> 
+                        <td class="colonne2"><input type="text" placeholder="Slot du 2eme finaliste" class="slot"></td>
+                        <td id = multi14><input type="number" placeholder="Gain" class="gain" oninput="calculer(this)"></td>
+                        <td class="multi"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+         
+        
+        
+    
+
+    <datalist id="pseudos">
+        <!-- Rempli auto -->
+    </datalist>
+
+    <datalist id="slots">
+        <!-- Rempli auto -->
+    </datalist>
+
+
+
+
+
+
+        
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>

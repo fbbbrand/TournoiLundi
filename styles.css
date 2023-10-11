@@ -1,0 +1,282 @@
+
+
+body {
+    background-image: url('casino.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+    font-family: 'Mr Dafoe';
+    margin: 0;
+    font-size: 5.5em;
+    margin-top: -0.2em;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    transform: rotate(-4deg);
+    margin-left: 120px;
+}
+    
+  
+  h2 {
+    font-family: 'Mr Dafoe';
+    margin: 0;
+    font-size: 5.5em;
+    margin-top: -0.3em;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    transform: rotate(-4deg);
+    margin-left: 50px;
+  }
+  
+
+
+.btn {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+.btn2 {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+
+.btn3 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+
+.btn, .btn2, .btn3 {    
+    background-color: #102022;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    text-align: center;
+    text-decoration: none #ffffff solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 220px;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:focus, .btn2:focus, .btn3:focus {
+  outline: 0;
+}
+
+.btn:after, .btn2:after, .btn3:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #ffffff;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.btn:hover:after, .btn2:hover:after, .btn3:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+::placeholder {
+    color: white; /* Couleur du texte en blanc */
+    opacity: 0.25; /* Opacité complète */
+}
+
+.tableau1 {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 700px;
+    background-image: linear-gradient(to bottom, #956ea6, #d9778d, #fbcd62); /* Dégradé de la couleur #FF5733 à #FFC300 */
+    border-collapse: collapse; /* Pour fusionner les bordures des cellules */
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Définir des largeurs spécifiques pour les colonnes */
+td:nth-child(1), th:nth-child(1) {
+    width: 250px; /* Largeur en pixels */
+}
+
+td:nth-child(2), th:nth-child(2) {
+    width: 250px; /* Largeur en pixels */
+}
+
+td:nth-child(3), th:nth-child(3) {
+    width: 100px; /* Largeur en pixels */
+}
+
+td:nth-child(4), th:nth-child(4) {
+    width: 100px; /* Largeur en pixels */
+}
+
+th {
+    background-color: #102022;
+    color: white;
+    height: 25px;
+}
+
+.tableau1 td {
+    color: white;
+    height: 2px;
+}
+
+.tableau1 th {
+    background-color: #102022;
+}
+
+.colonne1 input[type="text"] {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Mr Dafoe';
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #dd3232, 0 0 0.3em #000000;
+    font-size: 20px;
+}
+
+.colonne2 input[type="text"] {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Mr Dafoe';
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #dd3232, 0 0 0.3em #000000;
+    font-size: 17px;
+}
+
+input[type="text"] {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    border: none; /* Supprime la bordure */
+    background-color: transparent; /* Rend l'arrière-plan transparent */
+    outline: none; /* Supprime la mise en surbrillance du focus */
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 5px;
+    border: none; /* Supprime la bordure */
+    background-color: transparent; /* Rend l'arrière-plan transparent */
+    outline: none; /* Supprime la mise en surbrillance du focus */
+    font-weight: bold;
+}
+
+.bracket {
+    display: none;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.demi {
+    display: none;
+}
+
+.final {
+    display: none;
+}
+
+.tableau2 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.tableau3 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.tableau4 {
+    display: flex;
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.tableau5 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.tableau6 {
+    display: flex;
+    position: absolute;
+    margin-top: -580px;
+    margin-left: 850px;
+}
+
+.tableau6 th {
+    background-color: #1a3336;
+}
+
+.tableau7 {
+    display: flex;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 850px;
+}
+
+.tableau7 th {
+    background-color: #1a3336;
+}
+
+.tableau8 {
+    display: flex;
+    position: absolute;
+    margin-top: -380px;
+    margin-left: 1150px;
+}
+
+.tableau8 th {
+    background-color: #24474b;
+}
+
+
+.tableau1, .tableau2, .tableau3, .tableau4, .tableau5, .tableau6, .tableau7, .tableau8 {
+    text-align: center;
+    font-family: system-ui;
+}
+
+#pseudoGagnant1, #pseudoGagnant2,#pseudoGagnant3,#pseudoGagnant4,#pseudoGagnant5,#pseudoGagnant6,#pseudoGagnant7,#pseudoGagnant8,#pseudoGagnant9,#pseudoGagnant10,#pseudoGagnant11,#pseudoGagnant12,#pseudoGagnant13,#pseudoGagnant14 {
+    text-align: center;
+    font-family: 'Mr Dafoe';
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #dd3232, 0 0 0.3em #000000;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
