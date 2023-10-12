@@ -223,15 +223,3 @@ document.getElementById("multi12").addEventListener("input", determinerGagnant5)
 
 
 
-// Chargez les listes depuis le localStorage
-document.addEventListener('DOMContentLoaded', function() {
-    const listePseudos = localStorage.getItem('listePseudos');
-    if (listePseudos) {
-        document.getElementById('pseudos').innerHTML = listePseudos;
-    }
-
-    const listeSlots = localStorage.getItem('listeSlots');
-    if (listeSlots) {
-        document.getElementById('slots').innerHTML = listeSlots;
-    }
-});
