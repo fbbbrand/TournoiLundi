@@ -28,6 +28,35 @@ function calculer(input) {
     celluleResultat.style.fontWeight = "bold";
 }
 
+function calculer2(input) {
+    // Trouver la cellule dans la même ligne où afficher le résultat
+    var celluleResultat = input.parentElement.nextElementSibling;
+
+    // Récupérer la valeur du champ Gain
+    var gain = parseFloat(input.value);
+
+    // Limiter à 2 décimales
+    gain = parseFloat(gain.toFixed(2));
+
+    // Calculer le résultat
+    var resultat = gain / 0.4;
+
+    // Mettre à jour la cellule avec le résultat limité à 2 décimales
+    celluleResultat.textContent = resultat.toFixed(2);
+
+    // Appliquer les styles en fonction de la valeur
+    if (resultat < 40) {
+        celluleResultat.style.backgroundColor = "#F04422";
+    } else if (resultat >= 40 && resultat <= 80) {
+        celluleResultat.style.backgroundColor = "#E2961A";
+    } else {
+        celluleResultat.style.backgroundColor = "#23B640";
+    }
+
+    // Appliquer le style du texte
+    celluleResultat.style.color = "white";
+    celluleResultat.style.fontWeight = "bold";
+}
 
 function ajouterPseudo(input) {
     const pseudo = input.value.trim();
