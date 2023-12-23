@@ -58,56 +58,6 @@ function calculer2(input) {
     celluleResultat.style.fontWeight = "bold";
 }
 
-function ajouterPseudo(input) {
-    const pseudo = input.value.trim();
-    if (pseudo !== '') {
-        const datalist = document.getElementById('pseudos');
-        const options = datalist.getElementsByTagName('option');
-        let existeDeja = false;
-
-        for (let i = 0; i < options.length; i++) {
-            if (options[i].value === pseudo) {
-                existeDeja = true;
-                break;
-            }
-        }
-
-        if (!existeDeja) {
-            const nouvelleOption = document.createElement('option');
-            nouvelleOption.value = pseudo;
-            datalist.appendChild(nouvelleOption);
-
-            // Stockez la liste mise à jour dans le localStorage
-            localStorage.setItem('listePseudos', datalist.innerHTML);
-        }
-    }
-}
-
-function ajouterSlot(input) {
-    const slot = input.value.trim();
-    if (slot !== '') {
-        const datalist = document.getElementById('slots');
-        const options = datalist.getElementsByTagName('option');
-        let existeDeja = false;
-
-        for (let i = 0; i < options.length; i++) {
-            if (options[i].value === slot) {
-                existeDeja = true;
-                break;
-            }
-        }
-
-        if (!existeDeja) {
-            const nouvelleOption = document.createElement('option');
-            nouvelleOption.value = slot;
-            datalist.appendChild(nouvelleOption);
-
-            // Stockez la liste mise à jour dans le localStorage
-            localStorage.setItem('listeSlots', datalist.innerHTML);
-        }
-    }
-}
-
 function trierTableau() {
     var table = document.getElementById("monTableau");
     var rows = table.rows;
