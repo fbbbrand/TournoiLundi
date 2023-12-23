@@ -154,9 +154,13 @@ function afficherArbre() {
     var btn = document.querySelector('.btn');
     var btn2 = document.querySelector('.btn2');
     var btn3 = document.querySelector('.btn3');
+    var btn4 = document.querySelector('.btn4');
+    var btn5 = document.querySelector('.btn5');
     btn.style.display = 'none';
     btn2.style.display = 'none';
     btn3.style.display = 'none';
+    btn4.style.display = 'block';
+    btn5.style.display = 'block';
    
 
     // Afficher la div .bracket
