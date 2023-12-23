@@ -170,6 +170,34 @@ function afficherArbre() {
 
 document.querySelector('.btn3').addEventListener('click', afficherArbre);
 
+function afficherTableau() {
+   // Aficher le tableau 1
+   var tableau1 = document.querySelector('.tableau1');
+   tableau1.style.display = 'flex';
+
+   // Cacher les boutons btn et btn2
+   var btn = document.querySelector('.btn');
+   var btn2 = document.querySelector('.btn2');
+   var btn3 = document.querySelector('.btn3');
+   var btn4 = document.querySelector('.btn4');
+   var btn5 = document.querySelector('.btn5');
+   btn.style.display = 'block';
+   btn2.style.display = 'block';
+   btn3.style.display = 'block';
+   btn4.style.display = 'none';
+   btn5.style.display = 'none';
+  
+
+   // Cacher la div .bracket
+   var bracket = document.querySelector('.bracket');
+   bracket.style.display = 'none';
+   var demi = document.querySelector('.demi');
+   demi.style.display = 'none';
+   var final = document.querySelector('.final');
+   final.style.display = 'none';
+}
+document.querySelector('.btn4').addEventListener('click', afficherTableau);
+
 function determinerGagnant() {
     var multi1 = parseFloat(document.getElementById("multi1").querySelector(".gain").value);
     var multi2 = parseFloat(document.getElementById("multi2").querySelector(".gain").value);
