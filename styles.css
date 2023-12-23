@@ -47,7 +47,19 @@ h1 {
     left: 70%;
 }
 
-.btn, .btn2, .btn3 {    
+.btn4 {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    display: none;
+}
+
+.btn5 {
+    position: absolute;
+    top: 13%;
+    left: 70%;
+}
+.btn, .btn2, .btn3, .btn4 {    
     background-color: #102022;
     border: 0 solid #E5E7EB;
     box-sizing: border-box;
@@ -70,11 +82,34 @@ h1 {
     touch-action: manipulation;
 }
 
-.btn:focus, .btn2:focus, .btn3:focus {
+.btn5 {    
+    background-color: #f34444;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    text-align: center;
+    text-decoration: none #ffffff solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 220px;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:focus, .btn2:focus, .btn3:focus, .btn4:focus, .btn5:focus {
   outline: 0;
 }
 
-.btn:after, .btn2:after, .btn3:after {
+.btn:after, .btn2:after, .btn3:after, .btn4:after, .btn5:after {
   content: '';
   position: absolute;
   border: 1px solid #ffffff;
@@ -84,11 +119,10 @@ h1 {
   height: calc(100% - 1px);
 }
 
-.btn:hover:after, .btn2:hover:after, .btn3:hover:after {
+.btn:hover:after, .btn2:hover:after, .btn3:hover:after, .btn4:hover:after, .btn5:hover:after {
   bottom: 2px;
   left: 2px;
 }
-
 ::placeholder {
     color: white; /* Couleur du texte en blanc */
     opacity: 0.25; /* Opacité complète */
