@@ -28,55 +28,34 @@ function calculer(input) {
     celluleResultat.style.fontWeight = "bold";
 }
 
+function calculer2(input) {
+    // Trouver la cellule dans la même ligne où afficher le résultat
+    var celluleResultat = input.parentElement.nextElementSibling;
 
-function ajouterPseudo(input) {
-    const pseudo = input.value.trim();
-    if (pseudo !== '') {
-        const datalist = document.getElementById('pseudos');
-        const options = datalist.getElementsByTagName('option');
-        let existeDeja = false;
+    // Récupérer la valeur du champ Gain
+    var gain = parseFloat(input.value);
 
-        for (let i = 0; i < options.length; i++) {
-            if (options[i].value === pseudo) {
-                existeDeja = true;
-                break;
-            }
-        }
+    // Limiter à 2 décimales
+    gain = parseFloat(gain.toFixed(2));
 
-        if (!existeDeja) {
-            const nouvelleOption = document.createElement('option');
-            nouvelleOption.value = pseudo;
-            datalist.appendChild(nouvelleOption);
+    // Calculer le résultat
+    var resultat = gain / 0.4;
 
-            // Stockez la liste mise à jour dans le localStorage
-            localStorage.setItem('listePseudos', datalist.innerHTML);
-        }
+    // Mettre à jour la cellule avec le résultat limité à 2 décimales
+    celluleResultat.textContent = resultat.toFixed(2);
+
+    // Appliquer les styles en fonction de la valeur
+    if (resultat < 40) {
+        celluleResultat.style.backgroundColor = "#F04422";
+    } else if (resultat >= 40 && resultat <= 80) {
+        celluleResultat.style.backgroundColor = "#E2961A";
+    } else {
+        celluleResultat.style.backgroundColor = "#23B640";
     }
-}
 
-function ajouterSlot(input) {
-    const slot = input.value.trim();
-    if (slot !== '') {
-        const datalist = document.getElementById('slots');
-        const options = datalist.getElementsByTagName('option');
-        let existeDeja = false;
-
-        for (let i = 0; i < options.length; i++) {
-            if (options[i].value === slot) {
-                existeDeja = true;
-                break;
-            }
-        }
-
-        if (!existeDeja) {
-            const nouvelleOption = document.createElement('option');
-            nouvelleOption.value = slot;
-            datalist.appendChild(nouvelleOption);
-
-            // Stockez la liste mise à jour dans le localStorage
-            localStorage.setItem('listeSlots', datalist.innerHTML);
-        }
-    }
+    // Appliquer le style du texte
+    celluleResultat.style.color = "white";
+    celluleResultat.style.fontWeight = "bold";
 }
 
 function trierTableau() {
@@ -125,9 +104,13 @@ function afficherArbre() {
     var btn = document.querySelector('.btn');
     var btn2 = document.querySelector('.btn2');
     var btn3 = document.querySelector('.btn3');
+    var btn4 = document.querySelector('.btn4');
+    var btn5 = document.querySelector('.btn5');
     btn.style.display = 'none';
     btn2.style.display = 'none';
     btn3.style.display = 'none';
+    btn4.style.display = 'block';
+    btn5.style.display = 'block';
    
 
     // Afficher la div .bracket
@@ -140,6 +123,34 @@ function afficherArbre() {
 }
 
 document.querySelector('.btn3').addEventListener('click', afficherArbre);
+
+function afficherTableau() {
+   // Aficher le tableau 1
+   var tableau1 = document.querySelector('.tableau1');
+   tableau1.style.display = 'flex';
+
+   // Cacher les boutons btn et btn2
+   var btn = document.querySelector('.btn');
+   var btn2 = document.querySelector('.btn2');
+   var btn3 = document.querySelector('.btn3');
+   var btn4 = document.querySelector('.btn4');
+   var btn5 = document.querySelector('.btn5');
+   btn.style.display = 'block';
+   btn2.style.display = 'block';
+   btn3.style.display = 'block';
+   btn4.style.display = 'none';
+   btn5.style.display = 'none';
+  
+
+   // Cacher la div .bracket
+   var bracket = document.querySelector('.bracket');
+   bracket.style.display = 'none';
+   var demi = document.querySelector('.demi');
+   demi.style.display = 'none';
+   var final = document.querySelector('.final');
+   final.style.display = 'none';
+}
+document.querySelector('.btn4').addEventListener('click', afficherTableau);
 
 function determinerGagnant() {
     var multi1 = parseFloat(document.getElementById("multi1").querySelector(".gain").value);
@@ -222,4 +233,9 @@ function determinerGagnant5() {
 document.getElementById("multi12").addEventListener("input", determinerGagnant5);
 
 
+function restartPage() {
+    location.reload(); // Recharge la page actuelle
+}
 
+// Ajoute un gestionnaire d'événement au bouton
+document.querySelector('.btn5').addEventListener('click', restartPage);
